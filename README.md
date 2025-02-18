@@ -28,7 +28,7 @@ There are several configuration (```config/dataset_name.yaml```) files one for e
 
 
 ### Pre-trained checkpoint
-Checkpoints can be found under following link: [pre-trained checkpoints](link).
+Checkpoints can be found under following link: [pre-trained checkpoints](https://github.com/bishalsaraniah/first-order-model-demo/releases/tag/checkpoint).
 
 ### Animation Demo
 To run a demo, download checkpoint and run the following command:
