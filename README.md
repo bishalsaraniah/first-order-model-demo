@@ -28,7 +28,7 @@ There are several configuration (```config/dataset_name.yaml```) files one for e
 
 
 ### Pre-trained checkpoint
-Checkpoints can be found under following link: [google-drive](link).
+Checkpoints can be found under following link: [pre-trained checkpoints](link).
 
 ### Animation Demo
 To run a demo, download checkpoint and run the following command:
@@ -60,17 +60,6 @@ Checkpoints will be saved to this folder.
 To check the loss values during training see ```log.txt```.
 You can also check training data reconstructions in the ```train-vis``` subfolder.
 By default the batch size is tuned to run on 2 or 4 Titan-X gpu (apart from speed it does not make much difference). You can change the batch size in the train_params in corresponding ```.yaml``` file.
-
-### Evaluation on video reconstruction
-
-To evaluate the reconstruction performance run:
-```
-CUDA_VISIBLE_DEVICES=0 python run.py --config config/dataset_name.yaml --mode reconstruction --checkpoint path/to/checkpoint
-```
-You will need to specify the path to the checkpoint,
-the ```reconstruction``` subfolder will be created in the checkpoint folder.
-The generated video will be stored to this folder, also generated videos will be stored in ```png``` subfolder in loss-less '.png' format for evaluation.
-Instructions for computing metrics from the paper can be found: https://github.com/AliaksandrSiarohin/pose-evaluation.
 
 ### Image animation
 
